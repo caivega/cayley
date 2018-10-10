@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 )
 
 //go:generate protoc --proto_path=$GOPATH/src:. --gogo_out=. quads.proto

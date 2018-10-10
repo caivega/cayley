@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/nosql"
 
 	"github.com/go-kivik/kivik"
 )

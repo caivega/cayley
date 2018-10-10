@@ -22,19 +22,19 @@ import (
 	"os"
 	"time"
 
-	"github.com/cayleygraph/cayley/clog"
+	"github.com/caivega/cayley/clog"
 	"github.com/julienschmidt/httprouter"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/internal/gephi"
-	"github.com/cayleygraph/cayley/server/http"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/internal/gephi"
+	"github.com/caivega/cayley/server/http"
 )
 
 var AssetsPath string
 var defaultAssetPaths = []string{
   ".", "..", "./assets",
   "/usr/local/share/cayley/assets",
-  os.ExpandEnv("$GOPATH/src/github.com/cayleygraph/cayley"),
+  os.ExpandEnv("$GOPATH/src/github.com/caivega/cayley"),
 }
 var assetsDirs = []string{"templates", "static", "docs"}
 

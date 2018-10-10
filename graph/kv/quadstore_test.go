@@ -10,11 +10,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/kv"
-	"github.com/cayleygraph/cayley/graph/kv/btree"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/writer"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/kv"
+	"github.com/caivega/cayley/graph/kv/btree"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/writer"
 	"github.com/stretchr/testify/require"
 )
 

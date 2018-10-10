@@ -17,10 +17,10 @@ package kv
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/proto"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/proto"
+	"github.com/caivega/cayley/quad"
 )
 
 type AllIterator struct {

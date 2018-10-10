@@ -19,7 +19,7 @@ import (
 	"errors"
 	"testing"
 
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	. "github.com/caivega/cayley/graph/iterator"
 )
 
 func TestMaterializeIteratorError(t *testing.T) {

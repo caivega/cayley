@@ -22,9 +22,9 @@ import (
 
 	"github.com/boltdb/bolt"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/kv"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/kv"
 )
 
 func init() {
@@ -39,16 +39,20 @@ const (
 	Type = "bolt"
 )
 
-func getBoltFile(cfgpath string) string {
-	return filepath.Join(cfgpath, "indexes.bolt")
+func getBoltFile(cfgpath string, opt graph.Options) string {
+	filename, err := opt.StringKey("db_name", "indexes.bolt")
+	if err != nil {
+		filename = "indexes.bolt"
+	}
+	return filepath.Join(cfgpath, filename)
 }
 
-func Create(path string, _ graph.Options) (kv.BucketKV, error) {
+func Create(path string, opt graph.Options) (kv.BucketKV, error) {
 	err := os.MkdirAll(path, 0700)
 	if err != nil {
 		return nil, err
 	}
-	db, err := bolt.Open(getBoltFile(path), 0600, nil)
+	db, err := bolt.Open(getBoltFile(path, opt), 0600, nil)
 	if err != nil {
 		clog.Errorf("Error: couldn't create Bolt database: %v", err)
 		return nil, err
@@ -57,7 +61,7 @@ func Create(path string, _ graph.Options) (kv.BucketKV, error) {
 }
 
 func Open(path string, opt graph.Options) (kv.BucketKV, error) {
-	db, err := bolt.Open(getBoltFile(path), 0600, nil)
+	db, err := bolt.Open(getBoltFile(path, opt), 0600, nil)
 	if err != nil {
 		clog.Errorf("Error, couldn't open! %v", err)
 		return nil, err

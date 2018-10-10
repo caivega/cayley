@@ -23,36 +23,36 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cayleygraph/cayley/cmd/cayley/command"
+	"github.com/caivega/cayley/cmd/cayley/command"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cayleygraph/cayley/clog"
-	_ "github.com/cayleygraph/cayley/clog/glog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/version"
+	"github.com/caivega/cayley/clog"
+	_ "github.com/caivega/cayley/clog/glog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/version"
 
 	// Load supported backends
-	_ "github.com/cayleygraph/cayley/graph/all"
+	_ "github.com/caivega/cayley/graph/all"
 
 	// Load all supported quad formats.
-	_ "github.com/cayleygraph/cayley/quad/dot"
-	_ "github.com/cayleygraph/cayley/quad/gml"
-	_ "github.com/cayleygraph/cayley/quad/graphml"
-	_ "github.com/cayleygraph/cayley/quad/json"
-	_ "github.com/cayleygraph/cayley/quad/jsonld"
-	_ "github.com/cayleygraph/cayley/quad/nquads"
-	_ "github.com/cayleygraph/cayley/quad/pquads"
+	_ "github.com/caivega/cayley/quad/dot"
+	_ "github.com/caivega/cayley/quad/gml"
+	_ "github.com/caivega/cayley/quad/graphml"
+	_ "github.com/caivega/cayley/quad/json"
+	_ "github.com/caivega/cayley/quad/jsonld"
+	_ "github.com/caivega/cayley/quad/nquads"
+	_ "github.com/caivega/cayley/quad/pquads"
 
 	// Load writer registry
-	_ "github.com/cayleygraph/cayley/writer"
+	_ "github.com/caivega/cayley/writer"
 
 	// Load supported query languages
-	_ "github.com/cayleygraph/cayley/query/gizmo"
-	_ "github.com/cayleygraph/cayley/query/graphql"
-	_ "github.com/cayleygraph/cayley/query/mql"
-	_ "github.com/cayleygraph/cayley/query/sexp"
+	_ "github.com/caivega/cayley/query/gizmo"
+	_ "github.com/caivega/cayley/query/graphql"
+	_ "github.com/caivega/cayley/query/mql"
+	_ "github.com/caivega/cayley/query/sexp"
 )
 
 var (

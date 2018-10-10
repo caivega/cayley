@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cayleygraph/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph/nosql"
 	"github.com/stretchr/testify/require"
 )
 

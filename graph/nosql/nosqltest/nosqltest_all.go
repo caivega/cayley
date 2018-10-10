@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	"github.com/cayleygraph/cayley/graph/nosql"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/graphtest"
+	"github.com/caivega/cayley/graph/graphtest/testutil"
+	"github.com/caivega/cayley/graph/nosql"
+	"github.com/caivega/cayley/quad"
 )
 
 type DatabaseFunc func(t testing.TB) (nosql.Database, *nosql.Options, graph.Options, func())

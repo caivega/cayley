@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/shape"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/shape"
+	"github.com/caivega/cayley/quad"
 	"github.com/stretchr/testify/require"
 )
 

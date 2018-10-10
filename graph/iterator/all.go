@@ -26,7 +26,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/caivega/cayley/graph"
 )
 
 var _ graph.Iterator = &Int64{}

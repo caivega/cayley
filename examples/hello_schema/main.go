@@ -8,15 +8,15 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/cayleygraph/cayley"
-	"github.com/cayleygraph/cayley/graph"
-	_ "github.com/cayleygraph/cayley/graph/kv/bolt"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/schema"
-	"github.com/cayleygraph/cayley/voc"
+	"github.com/caivega/cayley"
+	"github.com/caivega/cayley/graph"
+	_ "github.com/caivega/cayley/graph/kv/bolt"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/schema"
+	"github.com/caivega/cayley/voc"
 
 	// Import RDF vocabulary definitions to be able to expand IRIs like rdf:label.
-	_ "github.com/cayleygraph/cayley/voc/core"
+	_ "github.com/caivega/cayley/voc/core"
 )
 
 type Person struct {

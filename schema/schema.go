@@ -12,12 +12,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/path"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/voc"
-	"github.com/cayleygraph/cayley/voc/rdf"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/path"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/voc"
+	"github.com/caivega/cayley/voc/rdf"
 )
 
 type ErrReqFieldNotSet struct {

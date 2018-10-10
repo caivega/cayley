@@ -3,8 +3,8 @@
 package cayley
 
 import (
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/path"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/path"
 )
 
 type Iterator = graph.Iterator

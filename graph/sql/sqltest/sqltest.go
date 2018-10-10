@@ -4,11 +4,11 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	"github.com/cayleygraph/cayley/graph/sql"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/graphtest"
+	"github.com/caivega/cayley/graph/graphtest/testutil"
+	"github.com/caivega/cayley/graph/sql"
+	"github.com/caivega/cayley/quad"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,10 +5,10 @@ package elastic
 import (
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/nosql"
-	"github.com/cayleygraph/cayley/graph/nosql/nosqltest"
-	"github.com/cayleygraph/cayley/internal/dock"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph/nosql/nosqltest"
+	"github.com/caivega/cayley/internal/dock"
 )
 
 var versions = []struct {

@@ -1,7 +1,7 @@
 # HTTP Methods
 
 This file covers deprecated v1 HTTP API. All the methods of v2 HTTP API is described in OpenAPI/Swagger [spec](./api/swagger.yml)
-and can be viewed by importing `https://raw.githubusercontent.com/cayleygraph/cayley/master/docs/api/swagger.yml` URL into [Swagger Editor](https://editor.swagger.io/) or [Swagger UI demo](http://petstore.swagger.io/).
+and can be viewed by importing `https://raw.githubusercontent.com/caivega/cayley/master/docs/api/swagger.yml` URL into [Swagger Editor](https://editor.swagger.io/) or [Swagger UI demo](http://petstore.swagger.io/).
 
 ## Gephi
 

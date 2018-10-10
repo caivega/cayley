@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/caivega/cayley/graph"
 )
 
 var nextIteratorID uint64

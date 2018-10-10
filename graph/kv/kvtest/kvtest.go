@@ -5,12 +5,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/kv"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/graphtest"
+	"github.com/caivega/cayley/graph/graphtest/testutil"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/kv"
+	"github.com/caivega/cayley/quad"
 	"github.com/stretchr/testify/require"
 )
 

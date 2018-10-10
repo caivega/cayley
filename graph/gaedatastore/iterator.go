@@ -18,10 +18,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/quad"
 
 	"google.golang.org/appengine/datastore"
 )

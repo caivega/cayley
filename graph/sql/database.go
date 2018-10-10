@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/log"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/log"
 )
 
 var types = make(map[string]Registration)

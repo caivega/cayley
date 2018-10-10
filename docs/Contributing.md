@@ -12,9 +12,9 @@ export PATH=$PATH:~/cayley/bin
 mkdir -p bin pkg
 
 # clone project
-mkdir -p src/github.com/cayleygraph
-cd src/github.com/cayleygraph
-git clone https://github.com/cayleygraph/cayley
+mkdir -p src/github.com/caivega
+cd src/github.com/caivega
+git clone https://github.com/caivega/cayley
 cd cayley
 
 # download dependencies
@@ -40,13 +40,13 @@ To run the web frontend, replace the "repl" command with "http"
 
 First, you'll need Go [(version 1.9.x or greater)](https://golang.org/doc/install) and a Go workspace. This is outlined by the Go team at http://golang.org/doc/code.html and is sort of the official way of going about it.
 
-If you just want to build Cayley and check out the source, or use it as a library, a simple `go get github.com/cayleygraph/cayley` will work!
+If you just want to build Cayley and check out the source, or use it as a library, a simple `go get github.com/caivega/cayley` will work!
 
 But suppose you want to contribute back on your own fork (and pull requests are welcome!). A good way to do this is to set up your $GOPATH and then...
 
 ```
-mkdir -p $GOPATH/src/github.com/cayleygraph
-cd $GOPATH/src/github.com/cayleygraph
+mkdir -p $GOPATH/src/github.com/caivega
+cd $GOPATH/src/github.com/caivega
 git clone https://github.com/$GITHUBUSERNAME/cayley
 ```
 
@@ -54,7 +54,7 @@ git clone https://github.com/$GITHUBUSERNAME/cayley
 
 ```
 cd cayley
-git remote add upstream http://github.com/cayleygraph/cayley
+git remote add upstream http://github.com/caivega/cayley
 ```
 
 So that you can keep up with the latest changes by periodically running

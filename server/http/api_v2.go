@@ -27,11 +27,11 @@ import (
 
 	"github.com/julienschmidt/httprouter"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/query"
-	_ "github.com/cayleygraph/cayley/writer"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/query"
+	_ "github.com/caivega/cayley/writer"
 )
 
 func NewAPIv2(h *graph.Handle) *APIv2 {

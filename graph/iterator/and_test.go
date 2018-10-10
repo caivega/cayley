@@ -19,9 +19,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphmock"
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/graphmock"
+	. "github.com/caivega/cayley/graph/iterator"
 )
 
 // Make sure that tags work on the And.

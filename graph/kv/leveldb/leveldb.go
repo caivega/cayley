@@ -24,8 +24,8 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"github.com/syndtr/goleveldb/leveldb/util"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/kv"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/kv"
 )
 
 func init() {

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/caivega/cayley/graph"
 )
 
 var ErrParseMore = errors.New("query: more input required")

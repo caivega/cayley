@@ -10,8 +10,8 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/nosql"
 )
 
 const Type = "mongo"

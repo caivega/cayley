@@ -4,8 +4,8 @@ import (
 	"context"
 	"math"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/quad"
 )
 
 // Recursive iterator takes a base iterator and a morphism to be applied recursively, for each result.

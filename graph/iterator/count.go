@@ -3,8 +3,8 @@ package iterator
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/quad"
 )
 
 var _ graph.Iterator = &Count{}

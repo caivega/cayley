@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/internal/lru"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/quad/pquads"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/internal/lru"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/quad/pquads"
 )
 
 const DefaultDBName = "cayley"

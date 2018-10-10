@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	. "github.com/caivega/cayley/graph/iterator"
 )
 
 func TestUniqueIteratorBasics(t *testing.T) {

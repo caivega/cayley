@@ -26,7 +26,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 )
 
 type Procedure int8

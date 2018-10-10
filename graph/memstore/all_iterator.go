@@ -17,8 +17,8 @@ package memstore
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
 )
 
 var _ graph.Iterator = (*AllIterator)(nil)

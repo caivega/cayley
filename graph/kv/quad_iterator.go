@@ -18,9 +18,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/proto"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/proto"
 )
 
 type QuadIterator struct {

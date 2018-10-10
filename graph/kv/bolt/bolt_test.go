@@ -19,9 +19,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/kv"
-	"github.com/cayleygraph/cayley/graph/kv/kvtest"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/kv"
+	"github.com/caivega/cayley/graph/kv/kvtest"
 )
 
 func makeBolt(t testing.TB) (kv.BucketKV, graph.Options, func()) {

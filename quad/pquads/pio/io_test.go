@@ -35,7 +35,7 @@ import (
 	"testing"
 	"time"
 
-	io "github.com/cayleygraph/cayley/quad/pquads/pio"
+	io "github.com/caivega/cayley/quad/pquads/pio"
 	"github.com/gogo/protobuf/test"
 )
 

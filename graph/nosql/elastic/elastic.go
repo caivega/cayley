@@ -12,8 +12,8 @@ import (
 
 	"gopkg.in/olivere/elastic.v5"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/nosql"
 )
 
 const Type = "elastic"

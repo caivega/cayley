@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 )
 
 func init() {

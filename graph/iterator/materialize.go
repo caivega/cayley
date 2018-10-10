@@ -19,8 +19,8 @@ package iterator
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
 )
 
 var _ graph.Iterator = &Materialize{}

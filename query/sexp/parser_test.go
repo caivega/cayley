@@ -18,11 +18,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/quad"
 
-	_ "github.com/cayleygraph/cayley/graph/memstore"
-	_ "github.com/cayleygraph/cayley/writer"
+	_ "github.com/caivega/cayley/graph/memstore"
+	_ "github.com/caivega/cayley/writer"
 )
 
 func TestBadParse(t *testing.T) {

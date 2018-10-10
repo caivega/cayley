@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	. "github.com/caivega/cayley/graph/iterator"
 )
 
 func TestNotIteratorBasics(t *testing.T) {

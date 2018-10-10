@@ -19,8 +19,8 @@ import (
 	"errors"
 	"testing"
 
-	. "github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/quad"
+	. "github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/quad"
 )
 
 func TestHasAIteratorErr(t *testing.T) {

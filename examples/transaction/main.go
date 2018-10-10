@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cayleygraph/cayley"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley"
+	"github.com/caivega/cayley/quad"
 )
 
 func main() {

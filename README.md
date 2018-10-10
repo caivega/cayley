@@ -6,8 +6,8 @@ Cayley is an open-source graph inspired by the graph database behind [Freebase](
 
 Its goal is to be a part of the developer's toolbox where [Linked Data](http://linkeddata.org/) and graph-shaped data (semantic webs, social networks, etc) in general are concerned.
 
-[![Build Status](https://travis-ci.org/cayleygraph/cayley.svg?branch=master)](https://travis-ci.org/cayleygraph/cayley)
-[![Container Repository on Quay](https://quay.io/repository/cayleygraph/cayley/status "Container Repository on Quay")](https://quay.io/repository/cayleygraph/cayley)
+[![Build Status](https://travis-ci.org/caivega/cayley.svg?branch=master)](https://travis-ci.org/caivega/cayley)
+[![Container Repository on Quay](https://quay.io/repository/caivega/cayley/status "Container Repository on Quay")](https://quay.io/repository/caivega/cayley)
 
 [![Slack Status](https://cayley-slackin.herokuapp.com/badge.svg)](https://cayley-slackin.herokuapp.com/)
 
@@ -39,9 +39,9 @@ Rough performance testing shows that, on 2014 consumer hardware and an average d
 ## Community
 
 * Website: [cayley.io](https://cayley.io)
-* Slack: [cayleygraph.slack.com](https://cayleygraph.slack.com) -- Invite [here](https://cayley-slackin.herokuapp.com/)
+* Slack: [caivega.slack.com](https://caivega.slack.com) -- Invite [here](https://cayley-slackin.herokuapp.com/)
 * Discourse list: [discourse.cayley.io](https://discourse.cayley.io) (Also acts as mailing list, enable mailing list mode)
-* Twitter: [@cayleygraph](https://twitter.com/cayleygraph)
+* Twitter: [@caivega](https://twitter.com/caivega)
 
 ## Documentation
 

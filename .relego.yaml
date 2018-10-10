@@ -15,9 +15,9 @@ build:
       - "386"
       - amd64
 ld:
-  versionPath: "github.com/cayleygraph/cayley/version.Version"
-  buildDatePath: "github.com/cayleygraph/cayley/version.BuildDate"
-  gitHashPath: "github.com/cayleygraph/cayley/version.GitHash"
+  versionPath: "github.com/caivega/cayley/version.Version"
+  buildDatePath: "github.com/caivega/cayley/version.BuildDate"
+  gitHashPath: "github.com/caivega/cayley/version.GitHash"
 mains:
   - "./cmd/cayley"
 include:

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 )
 
 var testReadCases = []struct {

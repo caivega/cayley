@@ -4,10 +4,10 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/path"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/voc"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/path"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/voc"
 )
 
 // GenerateID is called when any object without an ID field is being saved.

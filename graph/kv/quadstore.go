@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/proto"
-	"github.com/cayleygraph/cayley/internal/lru"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/quad/pquads"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/proto"
+	"github.com/caivega/cayley/internal/lru"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/quad/pquads"
 	boom "github.com/tylertreat/BoomFilters"
 )
 

@@ -21,15 +21,15 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cayleygraph/cayley/clog"
+	"github.com/caivega/cayley/clog"
 
 	"golang.org/x/net/context"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/http"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/http"
+	"github.com/caivega/cayley/quad"
 )
 
 var _ httpgraph.QuadStore = (*QuadStore)(nil)

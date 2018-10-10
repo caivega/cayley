@@ -3,8 +3,8 @@ package iterator_test
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph"
+	. "github.com/caivega/cayley/graph/iterator"
 )
 
 // A testing iterator that returns the given values for Next() and Err().

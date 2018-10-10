@@ -18,9 +18,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph/graphmock"
-	. "github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph/graphmock"
+	. "github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/quad"
 )
 
 func TestLinksTo(t *testing.T) {

@@ -14,10 +14,10 @@ import (
 	"github.com/dennwc/graphql/language/lexer"
 	"github.com/dennwc/graphql/language/parser"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/path"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/query"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/path"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/query"
 )
 
 const Name = "graphql"

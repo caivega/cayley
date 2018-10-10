@@ -1,7 +1,7 @@
 FROM golang:1.10 as builder
 
 # Set up workdir
-WORKDIR /go/src/github.com/cayleygraph/cayley
+WORKDIR /go/src/github.com/caivega/cayley
 
 # Restore vendored dependencies
 RUN curl -L https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64 -o /usr/local/bin/dep && \
@@ -39,7 +39,7 @@ COPY templates /fs/assets/templates
 # This will show warnings that glibc is required at runtime which can be ignored
 COPY . .
 RUN go build \
-  -ldflags="-linkmode external -extldflags -static -X github.com/cayleygraph/cayley/version.GitHash=$(git rev-parse HEAD | cut -c1-12)" \
+  -ldflags="-linkmode external -extldflags -static -X github.com/caivega/cayley/version.GitHash=$(git rev-parse HEAD | cut -c1-12)" \
   -a \
   -installsuffix cgo \
   -o /fs/bin/cayley \
@@ -63,5 +63,5 @@ EXPOSE 64210
 
 # Adding everything to entrypoint allows us to init+load+serve
 # with default containers parameters:
-#   i.e.: `docker run quay.io/cayleygraph/cayley --init -i /data/my_data.nq`
+#   i.e.: `docker run quay.io/caivega/cayley --init -i /data/my_data.nq`
 ENTRYPOINT ["cayley", "http", "--assets", "/assets", "--host", ":64210"]

@@ -17,7 +17,7 @@ package gizmo
 import (
 	"github.com/dop251/goja"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 )
 
 const TopResultTag = "id"

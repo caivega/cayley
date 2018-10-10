@@ -6,13 +6,13 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/memstore"
-	"github.com/cayleygraph/cayley/quad"
-	"github.com/cayleygraph/cayley/schema"
-	"github.com/cayleygraph/cayley/voc"
-	"github.com/cayleygraph/cayley/voc/rdf"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/memstore"
+	"github.com/caivega/cayley/quad"
+	"github.com/caivega/cayley/schema"
+	"github.com/caivega/cayley/voc"
+	"github.com/caivega/cayley/voc/rdf"
 )
 
 type item struct {

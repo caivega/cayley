@@ -17,10 +17,10 @@ package path
 import (
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/shape"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/shape"
+	"github.com/caivega/cayley/quad"
 )
 
 // join puts two iterators together by intersecting their result sets with an AND

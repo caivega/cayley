@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/quad"
 	"github.com/linkeddata/gojsonld"
 )
 

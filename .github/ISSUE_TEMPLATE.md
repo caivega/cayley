@@ -3,7 +3,7 @@ The GitHub issue tracker is for bug reports and feature requests.
 General support can be found at the following locations:
 
 - Cayley Forum - https://discourse.cayley.io
-- Slack - cayleygraph.slack.com, invites: https://cayley-slackin.herokuapp.com
+- Slack - caivega.slack.com, invites: https://cayley-slackin.herokuapp.com
 
 Please answer these questions before submitting your issue. Thanks!
 -->

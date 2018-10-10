@@ -22,14 +22,14 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/cayleygraph/cayley/graph/path"
+	. "github.com/caivega/cayley/graph/path"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/shape"
-	"github.com/cayleygraph/cayley/quad"
-	_ "github.com/cayleygraph/cayley/writer"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/graphtest/testutil"
+	"github.com/caivega/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph/shape"
+	"github.com/caivega/cayley/quad"
+	_ "github.com/caivega/cayley/writer"
 )
 
 // This is a simple test graph.

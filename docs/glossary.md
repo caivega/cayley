@@ -10,7 +10,7 @@
 ### quad
 1. where triples have the form `{subject, predicate, object}`, quads would have a form along the lines of `{subject, predicate, object, context}` [source](https://en.wikipedia.org/wiki/Named_graph#Named_graphs_and_quads) 
 2. You can add context or extra values to triples that identifies them and makes it easy to define subgraphs, or named properties. [source](https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/)
-3. From [Cayley godoc](https://godoc.org/github.com/cayleygraph/cayley/quad#Quad):
+3. From [Cayley godoc](https://godoc.org/github.com/caivega/cayley/quad#Quad):
 ```go
 type Quad struct {
     Subject   Value `json:“subject”`
@@ -25,7 +25,7 @@ type Quad struct {
 2. Given the triple `{A, knows, C}` you would say in graph terminology that `A` and `C` are "vertices" while `knows` is an "edge". You would also say that `A`, `knows`, and `C` are all "nodes", and they are "linked" to one another by the triple.
 
 ### IRI
-1. IRI is an RDF Internationalized Resource Identifier. [source](https://godoc.org/github.com/cayleygraph/cayley/quad#IRI)
+1. IRI is an RDF Internationalized Resource Identifier. [source](https://godoc.org/github.com/caivega/cayley/quad#IRI)
 2. An IRI (Internationalized Resource Identifier) within an RDF graph is a Unicode string that conforms to the syntax defined in RFC 3987. [source](https://www.w3.org/TR/rdf11-concepts/#h3_section-IRIs)
 3. IRIs are a generalization of URIs that permits a wider range of Unicode characters. Every absolute URI and URL is an IRI, but not every IRI is an URI. [source](https://www.w3.org/TR/rdf11-concepts/#h3_section-IRIs)
 
@@ -44,7 +44,7 @@ type Quad struct {
 1. Cayley is a quad store that supports multiple storage backends.  It supports multiple query languages for traversing and filtering the named graphs formed by its quads, and it has associated tooling such as a CLI, HTTP server, and so on.
 
 ### Gizmo
-1. A [Gremlin/TinkerPop](http://tinkerpop.apache.org/)-inspired query language for Cayley.  Looks a lot like JavaScript, the syntax is documented [here](https://github.com/cayleygraph/cayley/blob/master/docs/GizmoAPI.md#graphv).
+1. A [Gremlin/TinkerPop](http://tinkerpop.apache.org/)-inspired query language for Cayley.  Looks a lot like JavaScript, the syntax is documented [here](https://github.com/caivega/cayley/blob/master/docs/GizmoAPI.md#graphv).
 
 ### g.V()
 1. For Gremlin/TinkerPop, [g.V() returns a list of all the vertices in the graph](http://tinkerpop.apache.org/docs/3.3.3/tutorials/gremlins-anatomy/#_graphtraversalsource)
@@ -64,7 +64,7 @@ What are the names of projects that were created by two friends?
 ```
 
 ### direction
-1. Direction specifies a node's position within a quad. [source](https://godoc.org/github.com/cayleygraph/cayley/quad#Direction)
+1. Direction specifies a node's position within a quad. [source](https://godoc.org/github.com/caivega/cayley/quad#Direction)
 ```go
 const (
     Any Direction = iota
@@ -74,12 +74,12 @@ const (
     Label
 )
 ```
-2. Direction is passed to the `Get` method of a quad to access one of its four parts, see [quad.Get(d Direction) Value](https://godoc.org/github.com/cayleygraph/cayley/quad#Quad.Get)
+2. Direction is passed to the `Get` method of a quad to access one of its four parts, see [quad.Get(d Direction) Value](https://godoc.org/github.com/caivega/cayley/quad#Quad.Get)
 3. The term "Direction" comes about from the concept of traversing a graph. Take for example the triple `{A, follows, B}` and supposing you "select" the predicate `follows`. Now you want to traverse the graph, so you move in the `Object` direction, and you now have `B` selected. Whereas the high-level [path](#path) abstraction for queries uses inbound/outbound predicates to represent movement on the graph, the bottom-level [iterator](#iterator) mechanic uses Direction.
 
 ### path
 1. Paths are just a set of helpers to build a query, but they are not that good for building something more complex. You can try using [Shapes](#shape) for this - it will give you a full control of what the query actually does. [source](https://discourse.cayley.io/t/a-variety-of-questions/1183/2)
-2. Path represents either a morphism (a pre-defined path stored for later use), or a concrete path, consisting of a morphism and an underlying QuadStore. [source](https://godoc.org/github.com/cayleygraph/cayley/graph/path#Path)
+2. Path represents either a morphism (a pre-defined path stored for later use), or a concrete path, consisting of a morphism and an underlying QuadStore. [source](https://godoc.org/github.com/caivega/cayley/graph/path#Path)
 3. Underlying code:
   ```go
   type Path struct {
@@ -97,7 +97,7 @@ const (
 
   type applyMorphism func(shape.Shape, *pathContext) (shape.Shape, *pathContext)
   ```
-	So, as previously stated, the [path](https://godoc.org/github.com/cayleygraph/cayley/graph/path) package is just helper methods on top of the [shape](https://godoc.org/github.com/cayleygraph/cayley/graph/shape) package.
+	So, as previously stated, the [path](https://godoc.org/github.com/caivega/cayley/graph/path) package is just helper methods on top of the [shape](https://godoc.org/github.com/caivega/cayley/graph/shape) package.
 
 ### morphism
 1. Morphism is basically a path that is not attached to any particular quadstore or a particular starting point in the graph. Morphisms are meant to be used as a query part that can be applied to other queries to follow a path specified in the Morphism.  
@@ -119,7 +119,7 @@ set of things that match a particular portion of the graph. [source](https://dis
 				- Fixed iterator containing “B” – … just the node “B”
                
 ### LinkTo iterator
-1. A LinksTo takes a subiterator of nodes, and contains an iteration of links which "link to" those nodes in a given direction. ... Can be seen as the dual of the HasA iterator. [source](https://github.com/cayleygraph/cayley/blob/1f53d04893ea9b2736e9b2277bbba3f47b88711a/graph/iterator/linksto.go#L17)
+1. A LinksTo takes a subiterator of nodes, and contains an iteration of links which "link to" those nodes in a given direction. ... Can be seen as the dual of the HasA iterator. [source](https://github.com/caivega/cayley/blob/1f53d04893ea9b2736e9b2277bbba3f47b88711a/graph/iterator/linksto.go#L17)
 	- Next()ing a LinksTo is straightforward -- iterate through all links to things in the subiterator, and then advance the subiterator, and do it again.
     	- To restate in pseudo-code; `results` is what would be returned in successive `Next()` calls:
         ```go
@@ -144,8 +144,8 @@ set of things that match a particular portion of the graph. [source](https://dis
         ```
     
 ### HasA iterator
-1. The HasA takes a subiterator of links, and acts as an iterator of nodes in the given direction. The name comes from the idea that a "link HasA subject" or a "link HasA predicate". [source](https://github.com/cayleygraph/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L17)
-	- Next(), [We have a subiterator we can get a value from, and we can take that resultant quad, pull our direction out of it, and return that.](https://github.com/cayleygraph/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L206)
+1. The HasA takes a subiterator of links, and acts as an iterator of nodes in the given direction. The name comes from the idea that a "link HasA subject" or a "link HasA predicate". [source](https://github.com/caivega/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L17)
+	- Next(), [We have a subiterator we can get a value from, and we can take that resultant quad, pull our direction out of it, and return that.](https://github.com/caivega/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L206)
     ```go
     var results []quad.Value
     for _, quad := range hasA.subIterator {
@@ -163,7 +163,7 @@ set of things that match a particular portion of the graph. [source](https://dis
     ```
     
 ### shape
-1. Shape represent a query tree shape. [source](https://godoc.org/github.com/cayleygraph/cayley/graph/shape#Shape)
+1. Shape represent a query tree shape. [source](https://godoc.org/github.com/caivega/cayley/graph/shape#Shape)
 	```go
     type Shape interface {
         BuildIterator(qs graph.QuadStore) graph.Iterator
@@ -174,7 +174,7 @@ set of things that match a particular portion of the graph. [source](https://dis
 2. A Shape seems to be an abstract representation of a query, a level above Iterators and a level below Paths.  You can perform various operations on it (traverse inbound/outbound predicates, find unions and intersections, etc.) and most importantly build a tree of Iterators from it, which will do the mechanical act of processing quads to find results.
 
 ### token
-1. In the context of a [quad store](https://godoc.org/github.com/cayleygraph/cayley/graph#QuadStore), a [graph.Value](https://godoc.org/github.com/cayleygraph/cayley/graph#Value).  However the backend wishes to implement it, a Value is merely a token to a quad or a node that the backing store itself understands, and the base iterators pass around.    
+1. In the context of a [quad store](https://godoc.org/github.com/caivega/cayley/graph#QuadStore), a [graph.Value](https://godoc.org/github.com/caivega/cayley/graph#Value).  However the backend wishes to implement it, a Value is merely a token to a quad or a node that the backing store itself understands, and the base iterators pass around.    
 	For example, in a very traditional, graphd-style graph, these are int64s (guids of the primitives). In a very direct sort of graph, these could be pointers to structs, or merely quads, or whatever works best for the backing store.
     
 ### reification

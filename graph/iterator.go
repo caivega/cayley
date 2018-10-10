@@ -20,8 +20,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/quad"
+	"github.com/caivega/cayley/clog"
+	"github.com/caivega/cayley/quad"
 )
 
 type Tagger struct {

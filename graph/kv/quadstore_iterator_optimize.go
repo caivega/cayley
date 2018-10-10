@@ -17,8 +17,8 @@ package kv
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/caivega/cayley/graph"
+	"github.com/caivega/cayley/graph/iterator"
 )
 
 func (qs *QuadStore) OptimizeIterator(it graph.Iterator) (graph.Iterator, bool) {

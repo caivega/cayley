@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cayleygraph/cayley/graph/nosql"
+	"github.com/caivega/cayley/graph/nosql"
 )
 
 const (

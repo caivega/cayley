@@ -17,8 +17,8 @@ package path_test
 import (
 	"testing"
 
-	_ "github.com/cayleygraph/cayley/graph/memstore"
-	"github.com/cayleygraph/cayley/graph/path/pathtest"
+	_ "github.com/caivega/cayley/graph/memstore"
+	"github.com/caivega/cayley/graph/path/pathtest"
 )
 
 func TestMorphisms(t *testing.T) {
